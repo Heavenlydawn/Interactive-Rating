@@ -61,11 +61,15 @@ p{
     cursor: pointer;
 }
 
-#card .card .rating .btn:active{
+#card .card .rating .btn:hover{
     background-color: hsl(25, 97%, 53%);
     cursor: pointer;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
+}
+
+#card .card .rating .btn:focus{
+    background-color: hsl(217, 12%, 63%);
 }
 
 .submit{
@@ -82,8 +86,52 @@ p{
     cursor: pointer;
 }
 
-.submit:active{
+.submit:hover{
     background-color: hsl(0, 0%, 100%);
     cursor: pointer;
     color: hsl(25, 97%, 53%);
+}
+
+
+
+/* Rating Section */
+
+
+.rating-card .thank-you{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rating p{
+    background-color:  hsl(216, 26%, 22%);
+    color: orange;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    width: 60%;
+}
+
+.rating-msg{
+    text-align: center;
+    font-weight: 700;
+}
+
+.rating-msg p{
+    line-height: 2em;
+    font-size: 15px;
+    letter-spacing: .01em;
+}
+
+h1{
+    color:hsl(0, 0%, 100%);
+    line-height: 3em;
 }
