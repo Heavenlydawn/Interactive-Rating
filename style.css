@@ -132,3 +132,48 @@ h1 {
   color: hsl(0, 0%, 100%);
   line-height: 3em;
 }
+
+
+
+@media (max-width:375px){
+  #card .card{
+    width: 300px;
+    height: 330px;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+
+  #card .card .rating .btn {
+    height: 30px;
+    width: 30px;
+    font-size: 11px;
+  }
+
+
+  .submit {
+    padding: 10px;
+    margin:auto;
+    
+  }
+
+
+
+  /* rating */
+  .rating p {
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 5px;
+    width: 60%;
+  }
+
+  
+.rating-msg p {
+  font-size: 12px;
+}
+}
