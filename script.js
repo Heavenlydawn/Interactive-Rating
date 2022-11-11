@@ -1,11 +1,11 @@
-
 const btn = document.querySelectorAll(".btn");
 const submit = document.querySelector(".submit");
-const rateNum = document.querySelector("#rate-num");
+let rateNum = document.getElementById("rate-num");
 
-submit.addEventListener("click", function () {
+const handleSubmit = () => {
   location.href = "./rate.html";
-});
+
+};
 
 let selectedValue;
 console.log(btn);
@@ -18,5 +18,8 @@ btn.forEach((i) => {
   });
 });
 
-rateNum.textContent = localStorage.getItem("btn");
-console.log(rateNum.textContent);
+function displayNumber(){
+  let result = localStorage.getItem("btn");
+  rateNum.textContent = JSON.parse(result);
+}
+displayNumber()
