@@ -22,4 +22,4 @@ function displayNumber(){
   let result = localStorage.getItem("btn");
   rateNum.textContent = JSON.parse(result);
 }
-displayNumber()
+displayNumber();
